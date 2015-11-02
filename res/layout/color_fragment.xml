@@ -1,0 +1,166 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#202020"
+    tools:context=".ColorFragment" >
+    
+    <TextView
+        android:id="@+id/noConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/noConnection"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+    
+    <View
+    	android:id="@+id/rectangle"
+    	android:layout_width="100sp"
+    	android:layout_height="50sp"
+    	android:layout_marginTop="20sp"
+    	android:layout_centerHorizontal="true"
+    	android:background="@drawable/rectangle"/>
+    
+    <TextView
+        android:id="@+id/label_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rectangle"
+        android:text="@string/redLabel"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/label_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/redSeekBar"
+        android:text="@string/minValueLabel"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/label_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/redSeekBar"
+        android:layout_alignRight="@+id/redSeekBar"
+        android:text="@string/maxValueLabel"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    
+    <SeekBar
+        android:id="@+id/redSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/label_1" 
+        android:max="255"/>
+    
+    <TextView
+        android:id="@+id/label_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/redSeekBar"
+        android:text="@string/greenLabel"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/label_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/greenSeekBar"
+        android:text="@string/minValueLabel"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/label_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/greenSeekBar"
+        android:layout_alignRight="@+id/greenSeekBar"
+        android:text="@string/maxValueLabel"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    
+    <SeekBar
+        android:id="@+id/greenSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/label_4"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/label_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/greenSeekBar"
+        android:text="@string/blueLabel"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/label_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blueSeekBar"
+        android:text="@string/minValueLabel"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/label_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blueSeekBar"
+        android:layout_alignRight="@+id/blueSeekBar"
+        android:text="@string/maxValueLabel"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/blueSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/label_7"
+        android:max="255" />
+    
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:layout_below="@+id/blueSeekBar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sendButton" />
+    
+</RelativeLayout>

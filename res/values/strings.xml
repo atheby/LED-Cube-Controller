@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">LED Cube Controller</string>
+    
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="selectCube">Select Cube</string>
+    
+    <string name="noConnection">No connection</string>
+    <string name="cubeLabel">Cube:</string>
+    <string name="cubeName">-</string>
+    <string name="macLabel">MAC:</string>
+    <string name="cubeMAC">-</string>
+    <string name="statusLabel">Status:</string>
+    <string name="connStatus">Disconnected</string>
+    <string name="redLabel">Red</string>
+    <string name="greenLabel">Green</string>
+    <string name="blueLabel">Blue</string>
+    <string name="minValueLabel">0</string>
+    <string name="maxValueLabel">255</string>
+    <string name="sendButton">Send</string>
+    <string name="connectButton">Connect</string>
+
+</resources>
